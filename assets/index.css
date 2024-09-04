@@ -1,0 +1,18 @@
+
+.ball {
+    height: auto;
+    max-width: 250px;
+}
+
+
+body {
+    border: 1px solid #000;
+    background-color: #343434;
+    margin: 10px;
+
+}
+
+div {
+    padding: 10px;
+    background-color: #bbddff
+}
