@@ -1,0 +1,384 @@
+
+/*
+pruple=#2E1A4B
+gren=093D20
+gold=FFB71D
+*/
+
+/*
+    <div class="myDivider">
+        <h1 class="bigheading"></h1>
+        <p class="smallerheading"></p>
+
+    </div>*/
+
+
+/*
+thinking about it, does the teacher use BetterDiscord for changing how his UI looks?
+
+CSS padding for the dividers
+
+Look up how to use inheritence
+sass <. or less <-- look up how to use these
+*/
+
+ul>li {
+	display : inline-block;
+	justify-content: center;
+}
+
+
+body {
+	background-color: #093D20;
+	padding:20px;
+
+}
+
+.options {
+	background-color: #093D20;
+	color:#FFB71D;
+	font-weight: 350;
+	padding: 14px 25px;
+	text-align: center;
+	text-decoration: dashed;
+	display: inline-block;
+	border: 5px outset #093D20;
+}
+
+
+
+
+
+
+
+
+.paralaxScrolling {
+	  /* The image used */
+	  background-image: url("/img/tailgate.jpg");
+
+	  /* Set a specific height */
+	  min-height: 600px; 
+	
+	  /* Create the parallax scrolling effect */
+	  background-attachment: fixed;
+	  background-position: center;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+}
+
+.carasol {
+	position: relative;
+    height: 600px; /*This should be the same number as min-height inside same paralaxScrolling class*/
+    overflow: hidden;
+}
+
+.revolving_images_paralax {
+	display: flex;
+	animation: slide 15s infinite;
+}
+
+.revolving_images_paralax img {
+	height: 600px;
+	width: 100%;
+	object-fit: cover;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(0); }
+    25% { transform: translateX(-120%); } 
+    45% { transform: translateX(-120%); } 
+    50% { transform: translateX(-200%); } /*these really dont need to be here since it's really only moving through *2* images*/
+    70% { transform: translateX(-200%); }
+    75% { transform: translateX(0); }
+    95% { transform: translateX(0); }
+    100% { transform: translateX(0); }
+}
+
+.paralaxScrolling2 {
+	/* The image used */
+	background-image: url("/img/flagFootball.jpg");
+
+	/* Set a specific height */
+	min-height: 700px; 
+  
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.textOverlayForParalax {
+	position: relative;
+    top: -500px; /* Adjust to position text */
+    text-align: center;
+    color: white;
+    padding: 0px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+.textOverlayForParalax2 {
+	position: relative;
+    top: -600px; /* Adjust to position text */
+    text-align: center;
+    color: white;
+    padding: 0px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+
+.myDivider {
+	background-color: #093D20;
+	border: 5px outset #0b6e38;
+	text-align: center;
+}
+
+.TopofScreenBox {
+	grid-area: header;
+	padding : 30px;
+	text-align: center;
+	font-size: 35px;
+}
+
+.IncitingText {
+	background-color: #2E1A4B;
+	color:#FFB71D;
+	font-weight: 350;
+}
+
+a:link, a:visited {
+	background-color: #2E1A4B;
+	color:#FFB71D;
+	padding: 14px 25px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+}
+
+a:hover, a:active {
+	background-color: #2E1A4B;
+}
+
+
+
+
+
+
+
+
+
+
+
+.bigheading {
+	background-color: #2E1A4B;
+	color: #FFB71D;
+	margin: auto;
+	size:46px;
+	/*	Just added this, might need to remove, it got really laggy after implementing
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	*/
+	}
+
+.smallerheading {
+	size:24px;
+	background-color: #2E1A4B;
+	color: #FFB71D;
+	
+}
+
+.listeditems {
+	background-color: #2E1A4B;
+	color: #FFB71D;
+	
+}
+
+
+
+
+
+
+.roster-list {
+    display: flex;
+    flex-direction: row;
+	flex-wrap : wrap;
+    gap: 20px; /* Space between profiles */
+}
+
+.roster-profile {
+	background:white;
+	border-radius:8px;
+	box-shadow: 0 2px 5px rgba(0,0,0,.1);
+	padding:20px;
+	text-align: center;
+	width:200px;
+	overflow:hidden;
+}
+
+.roster-profile a {
+	background-color: transparent;
+	color:black;
+	padding: 0px 0px;
+	text-align: none;
+	text-decoration: none;
+	display:inline;
+}
+
+/*
+maybe have different colors depending on their role in the chapter?
+*/
+
+.roster-profile-red {
+	background-color: red;
+}
+
+.roster-profile-sweetheart {
+	background-color: pink;
+}
+
+.roster-profile-alumni-advisors {
+	background-color: greenyellow;
+}
+
+.roster-profile-brother {
+	background-color: #FFB71D;
+}
+
+.roster-profile-ifc {
+	background-color: aquamarine; /*as of right now, ifc will be aquamarine*/
+}
+
+.roster-profile-alumni {
+	background-color: tomato;
+}
+
+.roster-profile-pi {
+	background-color: darkgreen;
+}
+
+.roster-profile-epsilon {
+	background-color: orangered;
+}
+
+.roster-profile-sigma {
+	background-color: seagreen;
+}
+
+.roster-profile-phi {
+	background-color: green;
+}
+
+.roster-profile-delta {
+	background-color: lightgreen;
+}
+
+.roster-profile-kappa {
+	background-color: goldenrod;
+}
+
+.roster-profile-rho {
+	background-color: lightgrey;
+}
+
+.roster-profile-iota {
+	background-color: grey;
+}
+
+.roster-profile-tau {
+	background-color: #1b358d;
+}
+
+.roster-profile-gamma {
+	background-color: maroon;
+}
+
+.roster-profile-theta {
+	background-color: darkcyan;
+}
+
+.roster-profile-beta {
+	background-color: #2a52d6;
+}
+
+.roster-profile-alpha {
+	background-color: #2E1A4B;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*Create new tag for roster images inside the JS!!! the tagging images need to be fixed
+.roster-profile img {
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+}
+	*/
+
+.roster-profile-img {
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+}
+
+.roster-profile h2 {
+	margin: 10px 0 5px;
+}
+
+.roster-profile p {
+	margin: 0;
+}
+
+
+
+
+
+
+
+.navbar {
+    background-color: #093D20;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar img {
+	height: 100px;
+	width: 100%;
+	padding-left: 500%;
+	object-fit: cover;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+}
+
+.navbar ul li {
+    float: left;
+}
+
+.navbar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #FFB71D;
+}

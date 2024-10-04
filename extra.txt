@@ -1,0 +1,9 @@
+        <div class="roster-profile">
+            <img class="roster-profile-img" src="img/alex.jpg" alt="alex">
+            <h2>Name</h2>
+            <p>Roles</p>
+            <p>fact</p>
+            <p>Note</p>      
+            <p><a href="https://www.instagram.com/">Instagram</a></p>
+            <div id="image_placeholder"></div>
+        </div>
